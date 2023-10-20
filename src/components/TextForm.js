@@ -128,7 +128,7 @@ export default function TextForm(props) {
           ></textarea>
         </div>
         <div style={word}>
-          Words : <b>{text.split(" ").length - 1}</b> &nbsp;|&nbsp; Characters :{" "}
+          Words : <b>{text.split(" ").filter((ele)=>{return ele.length!==0}).length}</b> &nbsp;|&nbsp; Characters :{" "}
           <b>{text.length}</b>
         </div>
       </div>
