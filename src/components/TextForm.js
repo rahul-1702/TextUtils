@@ -90,31 +90,31 @@ export default function TextForm(props) {
           padding: "10px",
         }}
       >
-        <button className={`btn btn-${props.mode === 'white'?"light":"dark"} btn-sm my-1 me-2`} onClick={changeUp}>
+        <button disabled={text.length===0} className={`btn btn-${props.mode === 'white'?"light":"dark"} btn-sm my-1 me-2`} onClick={changeUp}>
           UpperCase
         </button>
-        <button className={`btn btn-${props.mode === 'white'?"light":"dark"} btn-sm my-1 me-2`} onClick={changeLo}>
+        <button disabled={text.length===0} className={`btn btn-${props.mode === 'white'?"light":"dark"} btn-sm my-1 me-2`} onClick={changeLo}>
           LowerCase
         </button>
-        <button
+        <button disabled={text.length===0}
           className={`btn btn-${props.mode === 'white'?"light":"dark"} btn-sm my-1 me-2`}
           onClick={changeCapt}
         >
           Capitalize
         </button>
-        <button
+        <button disabled={text.length===0}
           className={`btn btn-${props.mode === 'white'?"light":"dark"} btn-sm my-1 me-2`}
           onClick={removeSpace}
         >
           RemoveSpace
         </button>
-        <button
+        <button disabled={text.length===0}
           className={`btn btn-${props.mode === 'white'?"light":"dark"} btn-sm my-1 me-2`}
           onClick={copyToClipboard}
         >
           Copy To Clipboard
         </button>
-        <button className={`btn btn-${props.mode === 'white'?"light":"dark"} btn-sm my-1 me-2`} onClick={resetAll}>
+        <button disabled={text.length===0} className={`btn btn-${props.mode === 'white'?"light":"dark"} btn-sm my-1 me-2`} onClick={resetAll}>
           Reset All
         </button>
         <div className="form my-2">
@@ -128,7 +128,7 @@ export default function TextForm(props) {
           ></textarea>
         </div>
         <div style={word}>
-          Words : <b>{text.split(" ").filter((ele)=>{return ele.length!==0}).length}</b> &nbsp;|&nbsp; Characters :{" "}
+          Words : <b>{text.split(/\s+/).filter((ele)=>{return ele.length!==0}).length}</b> &nbsp;|&nbsp; Characters :{" "}
           <b>{text.length}</b>
         </div>
       </div>
