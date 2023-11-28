@@ -135,7 +135,7 @@ export default function TextForm(props) {
       <div className="container" style={heading}>
         <br/>
         <h6>Text Utils - Copyright &copy; {new Date().getFullYear()} | All Rights Reserved</h6>
-        <p style={{fontSize: '15px'}}>Created By <b>Rahul Taak</b></p>
+        <p style={{fontSize: '15px'}}>Created By <b>Rahul</b></p>
       </div>
     </>
   );
