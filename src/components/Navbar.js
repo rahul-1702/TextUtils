@@ -57,7 +57,7 @@ export default function Navbar() {
               
               <p style={{height: '100%', margin: 'auto 0px', color: 'gray'}}>Created By Rahul</p>
             </ul>
-          </div>
+          </div> 
           <div className="form-check form-switch">
             <input
               className="form-check-input mt-1 me-2"
