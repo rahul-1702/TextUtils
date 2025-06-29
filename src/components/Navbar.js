@@ -54,19 +54,10 @@ export default function Navbar() {
           </a>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mb-2 mb-lg-0">
-              {/* <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="/" style={navCol}>
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="/" style={navCol}>
-                  About
-                </a>
-              </li> */}
-              <p style={{height: '100%', margin: 'auto 0px', color: 'gray'}}>Created By Rahul Taak</p>
+              
+              <p style={{height: '100%', margin: 'auto 0px', color: 'gray'}}>Created By Rahul</p>
             </ul>
-          </div>
+          </div> 
           <div className="form-check form-switch">
             <input
               className="form-check-input mt-1 me-2"
